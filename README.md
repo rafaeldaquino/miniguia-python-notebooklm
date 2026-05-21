@@ -2,7 +2,7 @@
 Mini Projeto NotebookLM - Bootcamp Accenture Python para Análise e Automação de Dados
 
 ## Contexto e Objetivo
-Este repositório contém o desenvolvimento de um "Segundo Cérebro" criado no NotebookLM para me auxiliar durante o Bootcamp DIO/Accenture - Python para Análise e Automação de Dados. O objetivo central é centralizar, aprofundar e consultar, de forma rápida, os conceitos fundamentais de Python voltados à análise de dados e à automação de processos, otimizando o fluxo de aprendizado e a resolução de problemas.
+Este repositório contém o desenvolvimento de um "Segundo Cérebro" criado no NotebookLM para me auxiliar durante o "Bootcamp DIO/Accenture - Python para Análise e Automação de Dados". O objetivo central é centralizar, aprofundar e consultar, de forma rápida, os conceitos fundamentais de Python voltados à análise e à automação de dados, otimizando o fluxo de aprendizado e a resolução de problemas.
 
 ## Curadoria de Fontes
 Para alimentar a inteligência artificial do NotebookLM, foram selecionadas as seguintes fontes públicas e materiais de apoio:
@@ -28,3 +28,4 @@ Prompt Inicial: Qual é a principal diferença de uso entre o Matplotlib e o Sea
 #### O registro completo de prompts, respostas e troubleshooting está disponível em prompts.md
 
 ## Miniguia de Estudos 
+
