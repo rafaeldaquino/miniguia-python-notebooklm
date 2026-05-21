@@ -18,49 +18,8 @@ Para alimentar a inteligência artificial do NotebookLM, foram selecionadas as s
 
 **Tema 1:**
 Prompt inicial: Quais são os principais caminhos de aprendizado ou categorias recomendadas para quem está começando em Python, e quais habilidades são priorizadas em cada nível?
-
-Resposta da IA: Para quem está começando em Python, as fontes recomendadas apontam para uma progressão que vai desde a consolidação dos fundamentos até a     especialização em áreas como Ciência de Dados, Inteligência Artificial e Desenvolvimento Web.
-
-Os principais caminhos e as habilidades priorizadas em cada nível são:
-1. Nível Iniciante: Fortalecendo os Fundamentos
-O foco inicial deve ser a construção de uma base sólida, pois esses conceitos sustentarão qualquer especialização futura
-.
-Habilidades Priorizadas:
-Sintaxe básica e lógica: Uso de operadores, expressões e estruturas de controle como loops (for, while) e a palavra-chave continue
-.
-Manipulação de Tipos de Dados: Entender profundamente tipos como strings (e sua concatenação) e, principalmente, o tipo list
-.
-Estruturas de Código: Funções, classes e introdução à programação funcional
-.
-2. Nível Intermediário: Domínio da Linguagem e Ferramentas de Dados
-Neste estágio, o aprendizado foca em entender "como e por que" o Python funciona, além de dominar o ecossistema essencial para análise de dados
-.
-Habilidades Priorizadas:
-Recursos Modernos do Python: Masterização do modelo de objetos, métodos especiais, closures, decoradores e o uso de type hinting (anotações de tipo)
-.
-Processamento Numérico (NumPy): Manipulação de arrays multidimensionais (ndarray), compreensão de atributos como shape e dtype, e operações de broadcasting para eficiência computacional
-.
-Análise de Dados (Pandas): Uso de estruturas como Series e DataFrames, limpeza de dados (tratar valores ausentes), indexação avançada (.loc e .iloc) e operações de agrupamento (GroupBy)
-.
-3. Nível Profissional e Especializado
-Aqui o desenvolvedor escolhe trilhas específicas ou foca em práticas de engenharia de software de alta qualidade
-.
-Caminhos de Especialização:
-Visualização de Dados: Uso de Matplotlib para controle total de figuras e Seaborn para criação de gráficos estatísticos complexos com APIs de alto nível
-.
-Desenvolvimento de IA: Criação de agentes inteligentes com ferramentas como LangGraph e integração de LLMs com dados próprios via servidores MCP
-.
-Desenvolvimento Web: Criação de APIs rápidas com FastAPI ou aplicações completas com Flask e Django
-.
-Habilidades de Engenharia:
-Gerenciamento de Projetos: Uso de ferramentas modernas como uv e pyproject.toml para gerenciar dependências
-.
-Código Limpo e Qualidade: Implementação de logging (ex: Loguru), linting moderno com Ruff e padrões de nomenclatura
-.
-Para acelerar esse processo, é recomendável o uso de Learning Paths (trilhas de aprendizado guiadas) que organizam esses tópicos de forma estruturada do básico ao avançado
-.
-Gostaria que eu criasse um plano de estudos detalhado baseado em algum desses níveis específicos (Iniciante, Intermediário ou Profissional)?
-
-**Tema 2:**
+Resposta da IA: O registro completo de prompts, respostas e troubleshooting está disponível em prompts.md
+**Tema 2:** 
+Prompt Inicial: Quais são as estratégias recomendadas para identificar e tratar valores ausentes (missing values) utilizando o Pandas?
 
 ## Miniguia de Estudos 
