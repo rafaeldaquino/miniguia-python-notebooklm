@@ -18,8 +18,13 @@ Para alimentar a inteligência artificial do NotebookLM, foram selecionadas as s
 
 **Tema 1:**
 Prompt inicial: Quais são os principais caminhos de aprendizado ou categorias recomendadas para quem está começando em Python, e quais habilidades são priorizadas em cada nível?
-Resposta da IA: O registro completo de prompts, respostas e troubleshooting está disponível em prompts.md
+
 **Tema 2:** 
 Prompt Inicial: Quais são as estratégias recomendadas para identificar e tratar valores ausentes (missing values) utilizando o Pandas?
+
+**Tema 3:** 
+Prompt Inicial: Qual é a principal diferença de uso entre o Matplotlib e o Seaborn para gerar gráficos em Python, e quando devo preferir um ao outro?
+
+#### O registro completo de prompts, respostas e troubleshooting está disponível em prompts.md
 
 ## Miniguia de Estudos 
