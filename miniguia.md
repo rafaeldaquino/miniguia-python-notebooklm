@@ -26,11 +26,11 @@ As fundações do Python para análise de dados envolvem a manipulação de list
 
 Exemplos Práticos (1 linha):
 
-* Operadores: resultado = (10 + 5) * 2 / 3
-* Loops: for item in [1, 2, 3]: print(item)
-* Continue: for i in range(5): if i == 2: continue
-* Listas: minha_lista = [1, "dado", 3.14]
-* Programação Funcional: map(lambda x: x**2, [1, 2, 3])
+* Operadores: `resultado = (10 + 5) * 2 / 3`
+* Loops: `for item in [1, 2, 3]: print(item)`
+* Continue: `for i in range(5): if i == 2: continue`
+* Listas: `minha_lista = [1, "dado", 3.14]`
+* Programação Funcional: `map(lambda x: x**2, [1, 2, 3])`
 
 #### Novidades e Ferramentas Modernas (Python 3.14+):
 
@@ -42,8 +42,8 @@ A evolução da linguagem foca em performance e clareza para o desenvolvedor, co
 
 Exemplos Práticos (1 linha):
 
-* T-Strings (exemplo conceitual): f"Resultado: {valor:.2f}"
-* Instalação com uv: uv pip install pandas numpy seaborn
+* T-Strings (exemplo conceitual): `f"Resultado: {valor:.2f}"`
+* Instalação com uv: `uv pip install pandas numpy seaborn`
 
 
 --------------------------------------------------------------------------------
@@ -59,23 +59,23 @@ Os arrays NumPy possuem tipo fixo e formato retangular.
 
 | Método/Atributo	| Função |
 | ------------- | ------ |
-| np.array()	| Cria um array a partir de uma sequência (como uma lista). |
-| np.zeros()	| Inicializa um array preenchido com zeros. |
-| np.ones()	| Inicializa um array preenchido com uns. |
-| np.arange()	| Cria um array com um intervalo de valores. |
-| np.linspace()	| Gera valores linearmente espaçados em um intervalo. |
-| ndim	| Retorna o número de dimensões (eixos) do array. |
-| shape	| Retorna uma tupla com o tamanho de cada dimensão. |
+| `np.array()`	| Cria um array a partir de uma sequência (como uma lista). |
+| `np.zeros()`	| Inicializa um array preenchido com zeros. |
+| `np.ones()`	| Inicializa um array preenchido com uns. |
+| `np.arange()`	| Cria um array com um intervalo de valores. |
+| `np.linspace()`	| Gera valores linearmente espaçados em um intervalo. |
+| `ndim`	| Retorna o número de dimensões (eixos) do array. |
+| `shape`	| Retorna uma tupla com o tamanho de cada dimensão. |
 
 Exemplos Práticos (1 linha):
 
-* array: arr = np.array([1, 2, 3])
-* zeros: arr0 = np.zeros((2, 3))
-* ones: arr1 = np.ones((3, 3))
-* arange: arr_range = np.arange(0, 10, 2)
-* linspace: arr_lin = np.linspace(0, 1, 5)
-* ndim: dim = arr.ndim
-* shape: formato = arr.shape
+* array: `arr = np.array([1, 2, 3])`
+* zeros: `arr0 = np.zeros((2, 3))`
+* ones: `arr1 = np.ones((3, 3))`
+* arange: `arr_range = np.arange(0, 10, 2)`
+* linspace: `arr_lin = np.linspace(0, 1, 5)`
+* ndim: `dim = arr.ndim`
+* shape: `formato = arr.shape`
 
 #### Manipulação e Operações
 
@@ -88,11 +88,11 @@ O NumPy permite reestruturar dados sem copiar a memória subjacente através de 
 
 Exemplos Práticos (1 linha):
 
-* reshape: novo_arr = arr.reshape((3, 1))
-* concatenate: unido = np.concatenate((arr1, arr2))
-* transpose: transposta = matriz.T
-* flip: invertido = np.flip(arr, axis=0)
-* ravel: achatado = arr.ravel()
+* reshape: `novo_arr = arr.reshape((3, 1))`
+* concatenate: `unido = np.concatenate((arr1, arr2))`
+* transpose: `transposta = matriz.T`
+* flip: `invertido = np.flip(arr, axis=0)`
+* ravel: `achatado = arr.ravel()`
 
 
 --------------------------------------------------------------------------------
@@ -108,19 +108,19 @@ O Pandas suporta diversos formatos, como CSV, Excel, JSON e SQL.
 
 | Método	| Finalidade |
 | ------- | -------- |
-| read_csv()	| Carrega dados de um arquivo de valores separados por vírgula. |
-| head()	| Exibe as primeiras 5 linhas do conjunto de dados. |
-| info()	| Fornece um resumo conciso do DataFrame (tipos e valores nulos). |
-| describe()	| Gera estatísticas descritivas (média, desvio padrão, quartis). |
-| isna().sum()	| Detecta e quantifica valores ausentes por coluna. |
+| `read_csv()`	| Carrega dados de um arquivo de valores separados por vírgula. |
+| `head()`	| Exibe as primeiras 5 linhas do conjunto de dados. |
+| `info()`	| Fornece um resumo conciso do DataFrame (tipos e valores nulos). |
+| `describe()`	| Gera estatísticas descritivas (média, desvio padrão, quartis). |
+| `isna().sum()`	| Detecta e quantifica valores ausentes por coluna. |
 
 Exemplos Práticos (1 linha):
 
-* read_csv: df = pd.read_csv('dados.csv')
-* head: print(df.head(10))
-* info: df.info()
-* describe: estatisticas = df.describe()
-* isna: nulos = df.isna().sum()
+* read_csv: `df = pd.read_csv('dados.csv')`
+* head: `print(df.head(10))`
+* info: `df.info()`
+* describe: `estatisticas = df.describe()`
+* isna: `nulos = df.isna().sum()`
 
 #### Limpeza e Transformação
 
@@ -134,12 +134,12 @@ Lidar com dados ausentes e reorganizar a estrutura da tabela são etapas crític
 
 Exemplos Práticos (1 linha):
 
-* dropna: df_limpo = df.dropna()
-* fillna: df_preenchido = df.fillna(method='bfill')
-* loc: subset = df.loc[0:10, ['Coluna1', 'Coluna2']]
-* iloc: subset = df.iloc[0:5, 0:3]
-* melt: df_longo = pd.melt(df, id_vars=['ID'], value_vars=['A', 'B'])
-* pivot: df_largo = df.pivot(index='Data', columns='Var', values='Valor')
+* dropna: `df_limpo = df.dropna()`
+* fillna: `df_preenchido = df.fillna(method='bfill')`
+* loc: `subset = df.loc[0:10, ['Coluna1', 'Coluna2']]`
+* iloc: `subset = df.iloc[0:5, 0:3]`
+* melt: `df_longo = pd.melt(df, id_vars=['ID'], value_vars=['A', 'B'])`
+* pivot: `df_largo = df.pivot(index='Data', columns='Var', values='Valor')`
 
 #### Análise e Agregação
 
@@ -154,10 +154,10 @@ O poder do Pandas reside na sua capacidade de agrupar e combinar dados complexos
 
 Exemplos Práticos (1 linha):
 
-* groupby: media_grupo = df.groupby('Categoria')['Preço'].mean()
-* merge: combinado = pd.merge(df1, df2, on='id', how='inner')
-* concat: empilhado = pd.concat([df1, df2], axis=0)
-* apply: df['Nova'] = df['Valor'].apply(lambda x: x * 1.1)
+* groupby: `media_grupo = df.groupby('Categoria')['Preço'].mean()`
+* merge: `combinado = pd.merge(df1, df2, on='id', how='inner')`
+* concat: `empilhado = pd.concat([df1, df2], axis=0)`
+* apply: `df['Nova'] = df['Valor'].apply(lambda x: x * 1.1)`
 
 
 --------------------------------------------------------------------------------
@@ -173,11 +173,11 @@ O Matplotlib utiliza uma hierarquia de objetos: Figure (a janela completa), Axes
 
 Exemplos Práticos (1 linha):
 
-* plot: plt.plot(x, y, label='Tendência')
-* subplots: fig, ax = plt.subplots()
-* set_title: ax.set_title('Meu Gráfico Estatístico')
-* legend: plt.legend()
-* savefig: plt.savefig('grafico.png')
+* plot: `plt.plot(x, y, label='Tendência')`
+* subplots: `fig, ax = plt.subplots()`
+* set_title: `ax.set_title('Meu Gráfico Estatístico')`
+* legend: `plt.legend()`
+* savefig: `plt.savefig('grafico.png')`
 
 #### Seaborn: Gráficos Estatísticos Declarativos
 
@@ -185,19 +185,45 @@ O Seaborn integra-se ao Pandas e lida internamente com o mapeamento semântico e
 
 | Função Seaborn	| Aplicação |
 | ------ | ------ |
-| relplot()	| Visualiza relações estatísticas (dispersão ou linha). |
-| displot()	| Representa distribuições de dados (histogramas, KDE). |
-| catplot()	| Focada em dados categóricos (swarm, boxplot, barplot). |
-| lmplot()	| Desenha um modelo de regressão linear sobre um gráfico de dispersão. |
-| jointplot() |	Mostra a relação entre duas variáveis e suas distribuições marginais. |
-| pairplot()	| Exibe relações pareadas em um conjunto de dados completo. |
+| `relplot()`	| Visualiza relações estatísticas (dispersão ou linha). |
+| `displot()`	| Representa distribuições de dados (histogramas, KDE). |
+| `catplot()`	| Focada em dados categóricos (swarm, boxplot, barplot). |
+| `lmplot()`	| Desenha um modelo de regressão linear sobre um gráfico de dispersão. |
+| `jointplot()` |	Mostra a relação entre duas variáveis e suas distribuições marginais. |
+| `pairplot()`	| Exibe relações pareadas em um conjunto de dados completo. |
 
 Exemplos Práticos (1 linha):
 
-* relplot: sns.relplot(data=df, x='total', y='gorjeta', hue='dia')
-* displot: sns.displot(data=df, x='idade', kind='kde')
-* catplot: sns.catplot(data=df, x='dia', y='total', kind='box')
-* lmplot: sns.lmplot(data=df, x='tamanho', y='preço')
-* jointplot: sns.jointplot(data=df, x='x', y='y')
-* pairplot: sns.pairplot(df)
-* set_theme: sns.set_theme(style="darkgrid")
+* relplot: `sns.relplot(data=df, x='total', y='gorjeta', hue='dia')`
+* displot: `sns.displot(data=df, x='idade', kind='kde')`
+* catplot: `sns.catplot(data=df, x='dia', y='total', kind='box')`
+* lmplot: `sns.lmplot(data=df, x='tamanho', y='preço')`
+* jointplot: `sns.jointplot(data=df, x='x', y='y')`
+* pairplot: `sns.pairplot(df)`
+* set_theme: `sns.set_theme(style="darkgrid")`
+
+* ## Glossário
+
+| Termo | Definição |
+|------ | ------- |
+|DataFrame|A estrutura de dados em formato de tabela (linhas e colunas) do Pandas. É onde os seus dados estruturados (como planilhas do Excel ou bancos de dados) ganham vida para serem analisados.|
+|Pandas|A biblioteca principal para análise de dados em Python. Ela permite carregar, limpar, manipular e estruturar tabelas de dados de forma extremamente rápida.|
+|NumPy|Biblioteca fundamental para computação científica. Ela introduz matrizes numéricas de alta performance (ndarrays) e cálculos matemáticos pesados que servem de base para o Pandas.|
+|MatPlotLib|Biblioteca de visualização de dados. Serve para criar gráficos estáticos, animados e interativos de forma matemática e totalmente personalizável.|
+|Seaborn|Biblioteca de visualização de dados baseada no Matplotlib. Ela serve para criar gráficos estatísticos bonitos e complexos (como distribuições e correlações) com pouquíssimas linhas de código.|
+|GroupBy|Um dos métodos mais importantes para análise. Ele divide os dados em grupos com base em critérios escolhidos para que você possa aplicar funções como somar, contar ou tirar a média de cada grupo.|
+|Loc/ILoc|Indexadores fundamentais do Pandas para filtrar e selecionar dados específicos dentro de uma tabela. O Loc filtra pelos nomes/rótulos de linhas e colunas, enquanto o ILoc filtra pelas posições numéricas.|
+|Dropna/Fillna|Métodos essenciais para o tratamento de dados. O dropna remove registros que possuem informações faltando (nulas), enquanto o fillna preenche esses espaços vazios com valores padrão ou médias estatísticas.|
+|For (Loop)|Estrutura de repetição essencial para automação de tarefas. Permite que o Python execute a mesma instrução várias vezes seguidas automaticamente (ex: processar 100 arquivos de uma vez).|
+
+## Prompts Reutilizáveis
+
+Para revisão conceitual:
+"Explique [nome do conceito] de forma didática com exemplos de código."
+
+Para dúvidas práticas:
+"Quando devo usar [método A] em vez de [método B]?"
+
+Para aprofundamento:
+"Quais são os casos de uso mais comuns de [nome da função] em análise de dados?"
+
