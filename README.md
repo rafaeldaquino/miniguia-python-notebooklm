@@ -25,7 +25,9 @@ Prompt Inicial: Quais são as estratégias recomendadas para identificar e trata
 **Tema 3:** 
 Prompt Inicial: Qual é a principal diferença de uso entre o Matplotlib e o Seaborn para gerar gráficos em Python, e quando devo preferir um ao outro?
 
-#### O registro completo de prompts, respostas e troubleshooting está disponível em prompts.md
+#### O registro completo de prompts, respostas e troubleshooting está disponível em [Guia de Prompts Completo](prompts.md)
 
 ## Miniguia de Estudos 
+
+O Miniguia de Estudos elaborado no miniprojeto está disponível em [Miniguia de Estudos](miniguia.md).
 
