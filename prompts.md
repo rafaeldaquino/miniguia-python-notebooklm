@@ -46,7 +46,7 @@ Para quem está começando agora, uma boa estratégia é criar um cronograma de 
 .
 Você gostaria que eu criasse um guia de estudo detalhado focado especificamente em uma dessas bibliotecas, como o Pandas ou o NumPy?
 
-**Troubleshooting**
+**Troubleshooting:**
 A resposta foi conceitualmente completa, porém muito extensa. Utilizaremos um segundo prompt para obtermos uma resposta mais direta e focada no nível iniciante/intermediário.
 
 **Prompt refinado:** A resposta anterior ficou muito extensa e trouxe tópicos que fogem do meu foco atual (como Desenvolvimento Web e IA Avançada).
