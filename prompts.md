@@ -87,9 +87,9 @@ Você gostaria de um exemplo prático de como utilizar o Pandas para automatizar
 
 **Resposta da IA:** Para identificar e tratar valores ausentes (missing values) no Pandas, as fontes recomendam uma abordagem sistemática que envolve detecção, padronização e aplicação de técnicas de preenchimento ou remoção.
 1. Identificação e Detecção
-Detecção Global: A estratégia inicial recomendada é verificar o total de valores ausentes por coluna usando df.isna().sum().
+Detecção Global: A estratégia inicial recomendada é verificar o total de valores ausentes por coluna usando `df.isna().sum()`.
 Funções Específicas: O Pandas oferece as funções isna() e notna(), que podem ser aplicadas em DataFrames ou Series para retornar booleanos indicando a presença de valores nulos.
-Codificação Correta: Valores ausentes podem estar "escondidos" como ?, zeros, xx, -1 ou espaços em branco. As fontes enfatizam que o Pandas reconhece nativamente apenas o padrão NaN, portanto, é essencial converter essas entradas não padronizadas primeiro (ex: df[df == '?'] = np.nan).
+Codificação Correta: Valores ausentes podem estar "escondidos" como ?, zeros, xx, -1 ou espaços em branco. As fontes enfatizam que o Pandas reconhece nativamente apenas o padrão NaN, portanto, é essencial converter essas entradas não padronizadas primeiro (ex: `df[df == '?'] = np.nan`).
 2. Estratégias de Tratamento
 Existem diversas abordagens, e a escolha depende da natureza dos seus dados:
 Remoção: Utilizar o método dropna() para excluir linhas ou colunas que contenham valores nulos.
@@ -109,45 +109,45 @@ Você gostaria que eu demonstrasse um exemplo de código integrando a detecção
 **Resposta da IA:** Para identificar e tratar valores ausentes (conhecidos como missing values ou NA) no Pandas, as fontes recomendam uma abordagem que vai desde a detecção inicial e padronização até a aplicação de métodos de remoção ou preenchimento (imputação).
 Aqui estão as estratégias recomendadas com seus respectivos exemplos de código:
 
-1. Identificação e Detecção:
+Identificação e Detecção:
 O Pandas utiliza as funções isna() e notna() para detectar valores nulos, que geralmente são representados como NaN (Not a Number).
 
-#### Verificar o total de nulos por coluna: 
-df.isna().sum()
+Verificar o total de nulos por coluna: 
+`df.isna().sum()`
 
-#### Detecção em uma coluna específica: 
-df['coluna'].isna()
+Detecção em uma coluna específica: 
+`df['coluna'].isna()`
 
-2. Padronização de Valores Ausentes:
+Padronização de Valores Ausentes:
 Muitas vezes, os dados ausentes estão codificados incorretamente como ?, zeros, -1 ou espaços em branco. O Pandas só reconhece nativamente o padrão NaN, por isso é essencial converter esses caracteres primeiro utilizando o NumPy.
 
-#### Converter um marcador específico (ex: '?') para NaN:
-df.replace('?', np.nan)
+Converter um marcador específico (ex: '?') para NaN:
+`df.replace('?', np.nan)`
 
-4. Remoção de Dados:
+Remoção de Dados:
 Uma das estratégias mais simples é excluir as entradas que contêm valores nulos utilizando o método dropna(). Esta técnica é útil quando a perda de dados não compromete a análise.
 
-#### Remove todas as linhas que contenham ao menos um valor nulo 
-df.dropna()
+Remove todas as linhas que contenham ao menos um valor nulo 
+`df.dropna()`
 
-4. Preenchimento (Imputação):
+Preenchimento (Imputação):
 Existem diversas formas de preencher as lacunas para manter a integridade do conjunto de dados:
 Preenchimento com estatísticas ou valores fixos: É comum preencher com zeros ou com uma estatística de teste como a média ou mediana.
 Preenchimento Sequencial (Forward e Backward Fill):
 Forward Fill (pad ou fill): Propaga o último valor válido para a próxima lacuna.
 Backward Fill (bfill ou backfill): Usa o próximo valor válido para preencher a lacuna anterior.
 
-#### Exemplo de preenchimento para frente (Forward Fill)
-df.fillna(method='pad')
+Exemplo de preenchimento para frente (Forward Fill)
+`df.fillna(method='pad')`
 
-#### Exemplo de preenchimento para trás (Backward Fill)
-df.fillna(method='bfill')
+Exemplo de preenchimento para trás (Backward Fill)
+`df.fillna(method='bfill')`
 
-5. Validação com instrução ASSERT
+Validação com instrução ASSERT:
 Após realizar o tratamento, recomenda-se verificar programaticamente se ainda restam valores nulos para garantir que o código de automação funcionou como esperado. A instrução assert lançará um erro caso a condição seja falsa.
 
-#### Verifica se a soma total de valores nulos no DataFrame é zero 
-assert df.isna().sum().sum() == 0
+Verifica se a soma total de valores nulos no DataFrame é zero 
+`assert df.isna().sum().sum() == 0`
 
 Você gostaria que eu demonstrasse como realizar o preenchimento de valores ausentes de forma mais específica, por exemplo, utilizando a média de cada grupo através de uma operação groupby?
 
@@ -160,7 +160,7 @@ Abaixo estão os pontos fundamentais para decidir qual utilizar:
 
 1. Nível de Abstração e Facilidade de Uso:
    
-Seaborn: Possui uma API declarativa, o que significa que você foca no que os elementos do gráfico significam em vez de como desenhá-los. Com apenas uma linha de código (como o relplot()), ele realiza automaticamente mapeamentos semânticos (cores, marcadores) e agregações estatísticas complexas.
+Seaborn: Possui uma API declarativa, o que significa que você foca no que os elementos do gráfico significam em vez de como desenhá-los. Com apenas uma linha de código (como o `relplot()`), ele realiza automaticamente mapeamentos semânticos (cores, marcadores) e agregações estatísticas complexas.
 
 Matplotlib: Exige que você especifique manualmente os detalhes, como valores de cores ou códigos de marcadores. É uma ferramenta "faz-tudo" onde praticamente qualquer atributo de uma figura pode ser alterado, mas isso geralmente requer mais linhas de código.
 
@@ -197,38 +197,46 @@ Abaixo está a comparação de como esse objetivo é alcançado em cada bibliote
 
 O Seaborn utiliza uma API orientada a conjuntos de dados, permitindo que você descreva o que deseja ver em uma única chamada de função. Ele realiza automaticamente o mapeamento semântico (cores e legendas) e a agregação estatística.
 
+```python
 import seaborn as sns
 import matplotlib.pyplot as plt
+```
 
 Carrega um dataset de exemplo (que é um DataFrame do Pandas)
-tips = sns.load_dataset("tips")
+`tips = sns.load_dataset("tips")`
 
 Criar o gráfico: uma única chamada resolve eixos, cores e legenda
-sns.relplot(data=tips, x="total_bill", y="tip", hue="day", style="day")
+`sns.relplot(data=tips, x="total_bill", y="tip", hue="day", style="day")`
 
-plt.show() # Necessário em alguns ambientes para exibir o gráfico 
+`plt.show()` # Necessário em alguns ambientes para exibir o gráfico 
+
 Destaque: Observe que você fornece apenas os nomes das colunas e seus papéis. O Seaborn gerencia a tradução desses valores em argumentos que o Matplotlib entende, adicionando automaticamente rótulos informativos nos eixos e uma legenda explicativa.
 
 2. Abordagem com Matplotlib (Procedural/Baixo Nível):
 
 No Matplotlib, para obter o mesmo resultado com diferenciação de cores e legenda, você geralmente precisa de um controle mais manual e explícito. Embora seja possível usar o argumento data, a prática comum envolve iterar sobre os dados ou definir manualmente os códigos de cores.
-import matplotlib.pyplot as plt
+`import matplotlib.pyplot as plt`
 
 É necessário criar explicitamente a Figura e o Eixo (Estilo OO)
-fig, ax = plt.subplots()
+`fig, ax = plt.subplots()`
 
 Para colorir por categoria, muitas vezes é preciso separar os dados manualmente
+```python
 for day in tips['day'].unique():
-    day_data = tips[tips['day'] == day]
-    ax.scatter(day_data['total_bill'], day_data['tip'], label=day)
+   day_data = tips[tips['day'] == day]
+   ax.scatter(day_data['total_bill'], day_data['tip'], label=day)
+```
 
 Configurações manuais de rótulos e legenda
+```python
 ax.set_xlabel('Total Bill')
 ax.set_ylabel('Tip')
 ax.set_title('Relationship by Day')
-ax.legend() # A legenda precisa ser chamada e configurada explicitamente
+ax.legend() ## A legenda precisa ser chamada e configurada explicitamente
+```
 
-plt.show()
+`plt.show()`
+
 Destaque: No Matplotlib, você precisa gerenciar detalhes como a iteração das categorias, a atribuição manual de cores para cada grupo e a criação explícita da legenda e dos rótulos dos eixos.
 
 Resumo da Comparação
