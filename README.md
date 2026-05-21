@@ -1,6 +1,9 @@
 # miniguia-python-notebooklm
 Mini Projeto NotebookLM - Bootcamp Accenture Python para Análise e Automação de Dados
 
+[Painel de Estudos no NotebookLM](https://notebooklm.google.com/notebook/052a1ab7-413f-4d20-a77e-4fd79f12d4a0)
+
+
 ## Contexto e Objetivo
 Este repositório contém o desenvolvimento de um "Segundo Cérebro" no NotebookLM, criado para me auxiliar durante o "Bootcamp DIO/Accenture - Python para Análise e Automação de Dados". O objetivo central é centralizar, aprofundar e consultar, de forma rápida, os conceitos fundamentais de Python voltados à análise de dados, otimizando o fluxo de aprendizado e a resolução de problemas.
 
